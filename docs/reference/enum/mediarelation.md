@@ -90,5 +90,11 @@ Version 2 only.
 Version 2 only.
 </td>
 </tr>
+<tr>
+<td valign="top"><strong>SAME_UNIVERSE</strong></td>
+<td>
+Version 3 only. The media is set in the same universe as another media
+</td>
+</tr>
 </tbody>
 </table>

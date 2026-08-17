@@ -72,7 +72,7 @@ Profile highlight color
 <td colspan="2" align="right" valign="top">donatorBadge</td>
 <td valign="top"><a href="/reference/scalar/string">String</a></td>
 <td>
-Profile highlight color
+Profile highlight color (Max: 24)
 </td>
 </tr>
 <tr>
@@ -93,7 +93,7 @@ Timezone offset format: -?HH:MM
 <td colspan="2" align="right" valign="top">activityMergeTime</td>
 <td valign="top"><a href="/reference/scalar/int">Int</a></td>
 <td>
-Minutes between activity for them to be merged together. 0 is Never, Above 2 weeks (20160 mins) is Always.
+Minutes between activity for them to be merged together. 0 is Never, Above 2 weeks (20160 mins) is Always. (Min: 0)
 </td>
 </tr>
 <tr>
@@ -161,42 +161,42 @@ The watching/reading status
 <td colspan="2" align="right" valign="top">score</td>
 <td valign="top"><a href="/reference/scalar/float">Float</a></td>
 <td>
-The score of the media in the user's chosen scoring method
+The score of the media in the user's chosen scoring method (Min: 0, Max: 100)
 </td>
 </tr>
 <tr>
 <td colspan="2" align="right" valign="top">scoreRaw</td>
 <td valign="top"><a href="/reference/scalar/int">Int</a></td>
 <td>
-The score of the media in 100 point
+The score of the media in 100 point (Min: 0, Max: 100)
 </td>
 </tr>
 <tr>
 <td colspan="2" align="right" valign="top">progress</td>
 <td valign="top"><a href="/reference/scalar/int">Int</a></td>
 <td>
-The amount of episodes/chapters consumed by the user
+The amount of episodes/chapters consumed by the user (Min: 0)
 </td>
 </tr>
 <tr>
 <td colspan="2" align="right" valign="top">progressVolumes</td>
 <td valign="top"><a href="/reference/scalar/int">Int</a></td>
 <td>
-The amount of volumes read by the user
+The amount of volumes read by the user (Min: 0)
 </td>
 </tr>
 <tr>
 <td colspan="2" align="right" valign="top">repeat</td>
 <td valign="top"><a href="/reference/scalar/int">Int</a></td>
 <td>
-The amount of times the user has rewatched/read the media
+The amount of times the user has rewatched/read the media (Min: 0, Max: 1000)
 </td>
 </tr>
 <tr>
 <td colspan="2" align="right" valign="top">priority</td>
 <td valign="top"><a href="/reference/scalar/int">Int</a></td>
 <td>
-Priority of planning
+Priority of planning (Min: 0, Max: 255)
 </td>
 </tr>
 <tr>
@@ -210,7 +210,7 @@ If the entry should only be visible to authenticated user
 <td colspan="2" align="right" valign="top">notes</td>
 <td valign="top"><a href="/reference/scalar/string">String</a></td>
 <td>
-Text notes
+Text notes (Min: 0, Max: 6000)
 </td>
 </tr>
 <tr>
@@ -231,7 +231,7 @@ Array of custom list names which should be enabled for this entry
 <td colspan="2" align="right" valign="top">advancedScores</td>
 <td valign="top">[<a href="/reference/scalar/float">Float</a>]</td>
 <td>
-Array of advanced scores
+Array of advanced scores (Min: 0, Max: 100)
 </td>
 </tr>
 <tr>
@@ -266,42 +266,42 @@ The watching/reading status
 <td colspan="2" align="right" valign="top">score</td>
 <td valign="top"><a href="/reference/scalar/float">Float</a></td>
 <td>
-The score of the media in the user's chosen scoring method
+The score of the media in the user's chosen scoring method (Min: 0, Max: 100)
 </td>
 </tr>
 <tr>
 <td colspan="2" align="right" valign="top">scoreRaw</td>
 <td valign="top"><a href="/reference/scalar/int">Int</a></td>
 <td>
-The score of the media in 100 point
+The score of the media in 100 point (Min: 0, Max: 100)
 </td>
 </tr>
 <tr>
 <td colspan="2" align="right" valign="top">progress</td>
 <td valign="top"><a href="/reference/scalar/int">Int</a></td>
 <td>
-The amount of episodes/chapters consumed by the user
+The amount of episodes/chapters consumed by the user (Min: 0)
 </td>
 </tr>
 <tr>
 <td colspan="2" align="right" valign="top">progressVolumes</td>
 <td valign="top"><a href="/reference/scalar/int">Int</a></td>
 <td>
-The amount of volumes read by the user
+The amount of volumes read by the user (Min: 0)
 </td>
 </tr>
 <tr>
 <td colspan="2" align="right" valign="top">repeat</td>
 <td valign="top"><a href="/reference/scalar/int">Int</a></td>
 <td>
-The amount of times the user has rewatched/read the media
+The amount of times the user has rewatched/read the media (Min: 0, Max: 1000)
 </td>
 </tr>
 <tr>
 <td colspan="2" align="right" valign="top">priority</td>
 <td valign="top"><a href="/reference/scalar/int">Int</a></td>
 <td>
-Priority of planning
+Priority of planning (Min: 0, Max: 255)
 </td>
 </tr>
 <tr>
@@ -315,7 +315,7 @@ If the entry should only be visible to authenticated user
 <td colspan="2" align="right" valign="top">notes</td>
 <td valign="top"><a href="/reference/scalar/string">String</a></td>
 <td>
-Text notes
+Text notes (Min: 0, Max: 6000)
 </td>
 </tr>
 <tr>
@@ -329,7 +329,7 @@ If the entry shown be hidden from non-custom lists
 <td colspan="2" align="right" valign="top">advancedScores</td>
 <td valign="top">[<a href="/reference/scalar/float">Float</a>]</td>
 <td>
-Array of advanced scores
+Array of advanced scores (Min: 0, Max: 100)
 </td>
 </tr>
 <tr>
@@ -406,7 +406,7 @@ The activity's id, required for updating
 <td colspan="2" align="right" valign="top">text</td>
 <td valign="top"><a href="/reference/scalar/string">String</a></td>
 <td>
-The activity text
+The activity text (Min: 5, Max: 10000)
 </td>
 </tr>
 <tr>
@@ -434,7 +434,7 @@ The activity id, required for updating
 <td colspan="2" align="right" valign="top">message</td>
 <td valign="top"><a href="/reference/scalar/string">String</a></td>
 <td>
-The activity message text
+The activity message text (Min: 2, Max: 10000)
 </td>
 </tr>
 <tr>
@@ -567,7 +567,7 @@ The id of the parent activity being replied to
 <td colspan="2" align="right" valign="top">text</td>
 <td valign="top"><a href="/reference/scalar/string">String</a></td>
 <td>
-The reply text
+The reply text (Min: 2, Max: 8000)
 </td>
 </tr>
 <tr>
@@ -792,21 +792,21 @@ The id of the media the review is of
 <td colspan="2" align="right" valign="top">body</td>
 <td valign="top"><a href="/reference/scalar/string">String</a></td>
 <td>
-The main review text. Min:2200 characters
+The main review text (Min: 2600)
 </td>
 </tr>
 <tr>
 <td colspan="2" align="right" valign="top">summary</td>
 <td valign="top"><a href="/reference/scalar/string">String</a></td>
 <td>
-A short summary/preview of the review. Min:20, Max:120 characters
+A short summary/preview of the review (Min: 20, Max: 120)
 </td>
 </tr>
 <tr>
 <td colspan="2" align="right" valign="top">score</td>
 <td valign="top"><a href="/reference/scalar/int">Int</a></td>
 <td>
-A short summary/preview of the review. Min:20, Max:120 characters
+The score of the review (Min: 0, Max: 100)
 </td>
 </tr>
 <tr>
@@ -897,14 +897,14 @@ The thread id, required for updating
 <td colspan="2" align="right" valign="top">title</td>
 <td valign="top"><a href="/reference/scalar/string">String</a></td>
 <td>
-The title of the thread
+The title of the thread (Min: 6, Max: 120)
 </td>
 </tr>
 <tr>
 <td colspan="2" align="right" valign="top">body</td>
 <td valign="top"><a href="/reference/scalar/string">String</a></td>
 <td>
-The main text body of the thread
+The main text body of the thread (Max: 30000)
 </td>
 </tr>
 <tr>
@@ -1002,7 +1002,7 @@ The id of thread comment to reply to
 <td colspan="2" align="right" valign="top">comment</td>
 <td valign="top"><a href="/reference/scalar/string">String</a></td>
 <td>
-The comment markdown text
+The comment markdown text (Min: 1, Max: 12000)
 </td>
 </tr>
 <tr>

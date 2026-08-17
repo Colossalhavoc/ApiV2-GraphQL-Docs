@@ -92,6 +92,13 @@ If the currently authenticated user liked the activity
 </td>
 </tr>
 <tr>
+<td colspan="2" valign="top"><strong>isPinned</strong></td>
+<td valign="top"><a href="/reference/scalar/boolean">Boolean</a></td>
+<td>
+If the activity is pinned to the top of the users activity feed
+</td>
+</tr>
+<tr>
 <td colspan="2" valign="top"><strong>isPrivate</strong></td>
 <td valign="top"><a href="/reference/scalar/boolean">Boolean</a></td>
 <td>

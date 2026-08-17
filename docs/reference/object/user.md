@@ -80,7 +80,9 @@ If the user is blocked by the authenticated user
 <tr>
 <td colspan="2" valign="top"><strong>bans</strong></td>
 <td valign="top"><a href="/reference/scalar/json">Json</a></td>
-<td></td>
+<td>
+List of active bans. Mod-only
+</td>
 </tr>
 <tr>
 <td colspan="2" valign="top"><strong>options</strong></td>

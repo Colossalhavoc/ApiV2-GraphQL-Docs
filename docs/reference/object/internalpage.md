@@ -3,7 +3,7 @@ title: InternalPage Reference
 ---
 
 ### InternalPage
-Page of data (Used for internal use only)
+Page of data. Limited to a max depth of 5000 entries. This is calculated as the page parameter multiplied by the perPage parameter.
 <table>
 <thead>
 <tr>
@@ -199,6 +199,25 @@ Filter by the studio id
 <td colspan="2" align="right" valign="top">modId</td>
 <td valign="top"><a href="/reference/scalar/int">Int</a></td>
 <td></td>
+</tr>
+<tr>
+<td colspan="2" align="right" valign="top">modId_not</td>
+<td valign="top"><a href="/reference/scalar/int">Int</a></td>
+<td></td>
+</tr>
+<tr>
+<td colspan="2" align="right" valign="top">modId_in</td>
+<td valign="top">[<a href="/reference/scalar/int">Int</a>]</td>
+<td>
+(max 10,000 items)
+</td>
+</tr>
+<tr>
+<td colspan="2" align="right" valign="top">modId_not_in</td>
+<td valign="top">[<a href="/reference/scalar/int">Int</a>]</td>
+<td>
+(max 10,000 items)
+</td>
 </tr>
 <tr>
 <td colspan="2" valign="top"><strong>userBlockSearch</strong></td>
@@ -464,14 +483,14 @@ Filter by the media id
 <td colspan="2" align="right" valign="top">id_in</td>
 <td valign="top">[<a href="/reference/scalar/int">Int</a>]</td>
 <td>
-Filter by the media id
+Filter by the media id (max 10,000 items)
 </td>
 </tr>
 <tr>
 <td colspan="2" align="right" valign="top">id_not_in</td>
 <td valign="top">[<a href="/reference/scalar/int">Int</a>]</td>
 <td>
-Filter by the media id
+Filter by the media id (max 10,000 items)
 </td>
 </tr>
 <tr>
@@ -485,14 +504,14 @@ Filter by the media's MyAnimeList id
 <td colspan="2" align="right" valign="top">idMal_in</td>
 <td valign="top">[<a href="/reference/scalar/int">Int</a>]</td>
 <td>
-Filter by the media's MyAnimeList id
+Filter by the media's MyAnimeList id (max 10,000 items)
 </td>
 </tr>
 <tr>
 <td colspan="2" align="right" valign="top">idMal_not_in</td>
 <td valign="top">[<a href="/reference/scalar/int">Int</a>]</td>
 <td>
-Filter by the media's MyAnimeList id
+Filter by the media's MyAnimeList id (max 10,000 items)
 </td>
 </tr>
 <tr>
@@ -541,7 +560,7 @@ Filter by the end date of the media
 <td colspan="2" align="right" valign="top">format_in</td>
 <td valign="top">[<a href="/reference/enum/mediaformat">MediaFormat</a>]</td>
 <td>
-Filter by the media's format
+Filter by the media's format (max 10,000 items)
 </td>
 </tr>
 <tr>
@@ -555,14 +574,14 @@ Filter by the media's format
 <td colspan="2" align="right" valign="top">format_not_in</td>
 <td valign="top">[<a href="/reference/enum/mediaformat">MediaFormat</a>]</td>
 <td>
-Filter by the media's format
+Filter by the media's format (max 10,000 items)
 </td>
 </tr>
 <tr>
 <td colspan="2" align="right" valign="top">status_in</td>
 <td valign="top">[<a href="/reference/enum/mediastatus">MediaStatus</a>]</td>
 <td>
-Filter by the media's current release status
+Filter by the media's current release status (max 10,000 items)
 </td>
 </tr>
 <tr>
@@ -576,7 +595,7 @@ Filter by the media's current release status
 <td colspan="2" align="right" valign="top">status_not_in</td>
 <td valign="top">[<a href="/reference/enum/mediastatus">MediaStatus</a>]</td>
 <td>
-Filter by the media's current release status
+Filter by the media's current release status (max 10,000 items)
 </td>
 </tr>
 <tr>
@@ -639,56 +658,56 @@ Filter by the media's volume count
 <td colspan="2" align="right" valign="top">genre_in</td>
 <td valign="top">[<a href="/reference/scalar/string">String</a>]</td>
 <td>
-Filter by the media's genres
+Filter by the media's genres (max 10,000 items)
 </td>
 </tr>
 <tr>
 <td colspan="2" align="right" valign="top">genre_not_in</td>
 <td valign="top">[<a href="/reference/scalar/string">String</a>]</td>
 <td>
-Filter by the media's genres
+Filter by the media's genres (max 10,000 items)
 </td>
 </tr>
 <tr>
 <td colspan="2" align="right" valign="top">tag_in</td>
 <td valign="top">[<a href="/reference/scalar/string">String</a>]</td>
 <td>
-Filter by the media's tags
+Filter by the media's tags (max 10,000 items)
 </td>
 </tr>
 <tr>
 <td colspan="2" align="right" valign="top">tag_not_in</td>
 <td valign="top">[<a href="/reference/scalar/string">String</a>]</td>
 <td>
-Filter by the media's tags
+Filter by the media's tags (max 10,000 items)
 </td>
 </tr>
 <tr>
 <td colspan="2" align="right" valign="top">tagCategory_in</td>
 <td valign="top">[<a href="/reference/scalar/string">String</a>]</td>
 <td>
-Filter by the media's tags with in a tag category
+Filter by the media's tags with in a tag category (max 10,000 items)
 </td>
 </tr>
 <tr>
 <td colspan="2" align="right" valign="top">tagCategory_not_in</td>
 <td valign="top">[<a href="/reference/scalar/string">String</a>]</td>
 <td>
-Filter by the media's tags with in a tag category
+Filter by the media's tags with in a tag category (max 10,000 items)
 </td>
 </tr>
 <tr>
 <td colspan="2" align="right" valign="top">licensedBy_in</td>
 <td valign="top">[<a href="/reference/scalar/string">String</a>]</td>
 <td>
-Filter media by sites name with a online streaming or reading license
+Filter media by sites name with a online streaming or reading license (max 10,000 items)
 </td>
 </tr>
 <tr>
 <td colspan="2" align="right" valign="top">licensedById_in</td>
 <td valign="top">[<a href="/reference/scalar/int">Int</a>]</td>
 <td>
-Filter media by sites id with a online streaming or reading license
+Filter media by sites id with a online streaming or reading license (max 10,000 items)
 </td>
 </tr>
 <tr>
@@ -737,7 +756,21 @@ Filter by the number of users with this media on their list
 <td colspan="2" align="right" valign="top">source_in</td>
 <td valign="top">[<a href="/reference/enum/mediasource">MediaSource</a>]</td>
 <td>
-Filter by the source type of the media
+Filter by the source type of the media (max 10,000 items)
+</td>
+</tr>
+<tr>
+<td colspan="2" align="right" valign="top">countryOfOrigin_in</td>
+<td valign="top">[<a href="/reference/scalar/countrycode">CountryCode</a>]</td>
+<td>
+Filter by the media's country of origin (max 10,000 items)
+</td>
+</tr>
+<tr>
+<td colspan="2" align="right" valign="top">countryOfOrigin_not_in</td>
+<td valign="top">[<a href="/reference/scalar/countrycode">CountryCode</a>]</td>
+<td>
+Filter by the media's country of origin (max 10,000 items)
 </td>
 </tr>
 <tr>
@@ -784,14 +817,14 @@ Filter by character id
 <td colspan="2" align="right" valign="top">id_in</td>
 <td valign="top">[<a href="/reference/scalar/int">Int</a>]</td>
 <td>
-Filter by character id
+Filter by character id (max 10,000 items)
 </td>
 </tr>
 <tr>
 <td colspan="2" align="right" valign="top">id_not_in</td>
 <td valign="top">[<a href="/reference/scalar/int">Int</a>]</td>
 <td>
-Filter by character id
+Filter by character id (max 10,000 items)
 </td>
 </tr>
 <tr>
@@ -838,14 +871,14 @@ Filter by the staff id
 <td colspan="2" align="right" valign="top">id_in</td>
 <td valign="top">[<a href="/reference/scalar/int">Int</a>]</td>
 <td>
-Filter by the staff id
+Filter by the staff id (max 10,000 items)
 </td>
 </tr>
 <tr>
 <td colspan="2" align="right" valign="top">id_not_in</td>
 <td valign="top">[<a href="/reference/scalar/int">Int</a>]</td>
 <td>
-Filter by the staff id
+Filter by the staff id (max 10,000 items)
 </td>
 </tr>
 <tr>
@@ -885,14 +918,14 @@ Filter by the studio id
 <td colspan="2" align="right" valign="top">id_in</td>
 <td valign="top">[<a href="/reference/scalar/int">Int</a>]</td>
 <td>
-Filter by the studio id
+Filter by the studio id (max 10,000 items)
 </td>
 </tr>
 <tr>
 <td colspan="2" align="right" valign="top">id_not_in</td>
 <td valign="top">[<a href="/reference/scalar/int">Int</a>]</td>
 <td>
-Filter by the studio id
+Filter by the studio id (max 10,000 items)
 </td>
 </tr>
 <tr>
@@ -988,21 +1021,21 @@ Limit to only entries also on the auth user's list. Requires user id or name arg
 <td colspan="2" align="right" valign="top">userId_in</td>
 <td valign="top">[<a href="/reference/scalar/int">Int</a>]</td>
 <td>
-Filter by a user's id
+Filter by a user's id (max 10,000 items)
 </td>
 </tr>
 <tr>
 <td colspan="2" align="right" valign="top">status_in</td>
 <td valign="top">[<a href="/reference/enum/medialiststatus">MediaListStatus</a>]</td>
 <td>
-Filter by the watching/reading status
+Filter by the watching/reading status (max 10,000 items)
 </td>
 </tr>
 <tr>
 <td colspan="2" align="right" valign="top">status_not_in</td>
 <td valign="top">[<a href="/reference/enum/medialiststatus">MediaListStatus</a>]</td>
 <td>
-Filter by the watching/reading status
+Filter by the watching/reading status (max 10,000 items)
 </td>
 </tr>
 <tr>
@@ -1016,14 +1049,14 @@ Filter by the watching/reading status
 <td colspan="2" align="right" valign="top">mediaId_in</td>
 <td valign="top">[<a href="/reference/scalar/int">Int</a>]</td>
 <td>
-Filter by the media id of the list entry
+Filter by the media id of the list entry (max 10,000 items)
 </td>
 </tr>
 <tr>
 <td colspan="2" align="right" valign="top">mediaId_not_in</td>
 <td valign="top">[<a href="/reference/scalar/int">Int</a>]</td>
 <td>
-Filter by the media id of the list entry
+Filter by the media id of the list entry (max 10,000 items)
 </td>
 </tr>
 <tr>
@@ -1133,14 +1166,14 @@ Filter by the id of the airing schedule item
 <td colspan="2" align="right" valign="top">id_in</td>
 <td valign="top">[<a href="/reference/scalar/int">Int</a>]</td>
 <td>
-Filter by the id of the airing schedule item
+Filter by the id of the airing schedule item (max 10,000 items)
 </td>
 </tr>
 <tr>
 <td colspan="2" align="right" valign="top">id_not_in</td>
 <td valign="top">[<a href="/reference/scalar/int">Int</a>]</td>
 <td>
-Filter by the id of the airing schedule item
+Filter by the id of the airing schedule item (max 10,000 items)
 </td>
 </tr>
 <tr>
@@ -1154,14 +1187,14 @@ Filter by the id of associated media
 <td colspan="2" align="right" valign="top">mediaId_in</td>
 <td valign="top">[<a href="/reference/scalar/int">Int</a>]</td>
 <td>
-Filter by the id of associated media
+Filter by the id of associated media (max 10,000 items)
 </td>
 </tr>
 <tr>
 <td colspan="2" align="right" valign="top">mediaId_not_in</td>
 <td valign="top">[<a href="/reference/scalar/int">Int</a>]</td>
 <td>
-Filter by the id of associated media
+Filter by the id of associated media (max 10,000 items)
 </td>
 </tr>
 <tr>
@@ -1175,14 +1208,14 @@ Filter by the airing episode number
 <td colspan="2" align="right" valign="top">episode_in</td>
 <td valign="top">[<a href="/reference/scalar/int">Int</a>]</td>
 <td>
-Filter by the airing episode number
+Filter by the airing episode number (max 10,000 items)
 </td>
 </tr>
 <tr>
 <td colspan="2" align="right" valign="top">episode_not_in</td>
 <td valign="top">[<a href="/reference/scalar/int">Int</a>]</td>
 <td>
-Filter by the airing episode number
+Filter by the airing episode number (max 10,000 items)
 </td>
 </tr>
 <tr>
@@ -1285,14 +1318,14 @@ Filter by the media id
 <td colspan="2" align="right" valign="top">mediaId_in</td>
 <td valign="top">[<a href="/reference/scalar/int">Int</a>]</td>
 <td>
-Filter by the media id
+Filter by the media id (max 10,000 items)
 </td>
 </tr>
 <tr>
 <td colspan="2" align="right" valign="top">mediaId_not_in</td>
 <td valign="top">[<a href="/reference/scalar/int">Int</a>]</td>
 <td>
-Filter by the media id
+Filter by the media id (max 10,000 items)
 </td>
 </tr>
 <tr>
@@ -1423,7 +1456,7 @@ Reset the unread notification count to 0 on load
 <td colspan="2" align="right" valign="top">type_in</td>
 <td valign="top">[<a href="/reference/enum/notificationtype">NotificationType</a>]</td>
 <td>
-Filter by the type of notifications
+Filter by the type of notifications (max 10,000 items)
 </td>
 </tr>
 <tr>
@@ -1543,14 +1576,14 @@ Filter by the activity id
 <td colspan="2" align="right" valign="top">id_in</td>
 <td valign="top">[<a href="/reference/scalar/int">Int</a>]</td>
 <td>
-Filter by the activity id
+Filter by the activity id (max 10,000 items)
 </td>
 </tr>
 <tr>
 <td colspan="2" align="right" valign="top">id_not_in</td>
 <td valign="top">[<a href="/reference/scalar/int">Int</a>]</td>
 <td>
-Filter by the activity id
+Filter by the activity id (max 10,000 items)
 </td>
 </tr>
 <tr>
@@ -1564,14 +1597,14 @@ Filter by the owner user id
 <td colspan="2" align="right" valign="top">userId_in</td>
 <td valign="top">[<a href="/reference/scalar/int">Int</a>]</td>
 <td>
-Filter by the owner user id
+Filter by the owner user id (max 10,000 items)
 </td>
 </tr>
 <tr>
 <td colspan="2" align="right" valign="top">userId_not_in</td>
 <td valign="top">[<a href="/reference/scalar/int">Int</a>]</td>
 <td>
-Filter by the owner user id
+Filter by the owner user id (max 10,000 items)
 </td>
 </tr>
 <tr>
@@ -1585,14 +1618,14 @@ Filter by the id of the user who sent a message
 <td colspan="2" align="right" valign="top">messengerId_in</td>
 <td valign="top">[<a href="/reference/scalar/int">Int</a>]</td>
 <td>
-Filter by the id of the user who sent a message
+Filter by the id of the user who sent a message (max 10,000 items)
 </td>
 </tr>
 <tr>
 <td colspan="2" align="right" valign="top">messengerId_not_in</td>
 <td valign="top">[<a href="/reference/scalar/int">Int</a>]</td>
 <td>
-Filter by the id of the user who sent a message
+Filter by the id of the user who sent a message (max 10,000 items)
 </td>
 </tr>
 <tr>
@@ -1606,14 +1639,14 @@ Filter by the associated media id of the activity
 <td colspan="2" align="right" valign="top">mediaId_in</td>
 <td valign="top">[<a href="/reference/scalar/int">Int</a>]</td>
 <td>
-Filter by the associated media id of the activity
+Filter by the associated media id of the activity (max 10,000 items)
 </td>
 </tr>
 <tr>
 <td colspan="2" align="right" valign="top">mediaId_not_in</td>
 <td valign="top">[<a href="/reference/scalar/int">Int</a>]</td>
 <td>
-Filter by the associated media id of the activity
+Filter by the associated media id of the activity (max 10,000 items)
 </td>
 </tr>
 <tr>
@@ -1627,14 +1660,14 @@ Filter by the type of activity
 <td colspan="2" align="right" valign="top">type_in</td>
 <td valign="top">[<a href="/reference/enum/activitytype">ActivityType</a>]</td>
 <td>
-Filter by the type of activity
+Filter by the type of activity (max 10,000 items)
 </td>
 </tr>
 <tr>
 <td colspan="2" align="right" valign="top">type_not_in</td>
 <td valign="top">[<a href="/reference/enum/activitytype">ActivityType</a>]</td>
 <td>
-Filter by the type of activity
+Filter by the type of activity (max 10,000 items)
 </td>
 </tr>
 <tr>
@@ -1735,7 +1768,7 @@ Filter by search query
 <td colspan="2" align="right" valign="top">id_in</td>
 <td valign="top">[<a href="/reference/scalar/int">Int</a>]</td>
 <td>
-Filter by the thread id
+Filter by the thread id (max 10,000 items)
 </td>
 </tr>
 <tr>

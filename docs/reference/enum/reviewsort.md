@@ -37,12 +37,22 @@ Review sort enums
 <td></td>
 </tr>
 <tr>
-<td valign="top"><strong>CREATED_AT</strong></td>
-<td></td>
+<td valign="top"><strong>CREATED_AT</strong> ⚠️</td>
+<td>
+<p>⚠️ <strong>DEPRECATED</strong></p>
+<blockquote>
+Use ID instead
+</blockquote>
+</td>
 </tr>
 <tr>
-<td valign="top"><strong>CREATED_AT_DESC</strong></td>
-<td></td>
+<td valign="top"><strong>CREATED_AT_DESC</strong> ⚠️</td>
+<td>
+<p>⚠️ <strong>DEPRECATED</strong></p>
+<blockquote>
+Use ID_DESC instead
+</blockquote>
+</td>
 </tr>
 <tr>
 <td valign="top"><strong>UPDATED_AT</strong></td>

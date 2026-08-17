@@ -37,7 +37,7 @@ The type of relation to the parent model
 <td colspan="2" align="right" valign="top">version</td>
 <td valign="top"><a href="/reference/scalar/int">Int</a></td>
 <td>
-Provide 2 to use new version 2 of relation enum
+Provide 3 to use new version 3 of relation enum
 </td>
 </tr>
 <tr>

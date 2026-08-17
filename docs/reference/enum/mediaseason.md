@@ -14,25 +14,25 @@ title: MediaSeason Reference
 <tr>
 <td valign="top"><strong>WINTER</strong></td>
 <td>
-Months December to February
+Predominantly started airing between January and March
 </td>
 </tr>
 <tr>
 <td valign="top"><strong>SPRING</strong></td>
 <td>
-Months March to May
+Predominantly started airing between April and June
 </td>
 </tr>
 <tr>
 <td valign="top"><strong>SUMMER</strong></td>
 <td>
-Months June to August
+Predominantly started airing between July and September
 </td>
 </tr>
 <tr>
 <td valign="top"><strong>FALL</strong></td>
 <td>
-Months September to November
+Predominantly started airing between October and November
 </td>
 </tr>
 </tbody>

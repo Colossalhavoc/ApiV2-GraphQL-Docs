@@ -3,7 +3,7 @@ title: UserActivityHistory Reference
 ---
 
 ### UserActivityHistory
-A user's activity history stats.
+A user's activity history stats for the previous 6 months. Refreshes only periodically
 <table>
 <thead>
 <tr>
