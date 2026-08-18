@@ -11,7 +11,7 @@ While we want to allow you to build whatever cool project you want, there are so
 2. Using the AniList API as a backup or data storage service is strictly prohibited.
 3. **Hoarding** or mass collection of data from the AniList API is strictly prohibited.
 4. Applications or services must comply with our [naming guidelines](#naming-guidelines).
-5. Prohibited from use within competing noncomplementary services of the same nature. This includes, but is not limited to Anime/Manga list/tracker services. Competing services may be authorized on request if they provide significant sustained integration/syncing with the AniList API and AniList user accounts.
+5. Use of the AniList API within competing, non-complementary services of the same nature is prohibited. This includes, but is not limited to, anime and manga list or tracker services. The restriction applies to all data provided through the API, including both user data and media data.
 
 ::: info Data collection for educational purposes
 For purely educational projects, such as school assignments, we tend to be very lenient on the 3rd point.
